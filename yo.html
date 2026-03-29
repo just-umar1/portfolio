@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>not your average portfolio</title> <!--sitename -->
+  <style>
+
+body{font-family:verdana;
+    background-color:#FAFAE0;
+    color:#DDA15E;
+     top:00px;
+     left:0px;
+     position:absolute;
+    overflow:auto;}
+
+  h1{
+     text-shadow: 2px 2px 5px #DDA15E;
+     color:#DDA15E;
+     font-size:150px;
+     line-height:1;}
+
+  h2{text-align:center;
+     text-shadow: 2px 2px 5px #DDA15E;
+     color:#DDA15E;
+     font-size:150px;
+     line-height:1;}
+
+  P {text-shadow:1px 1px 3px #DDA15E;
+    text-align:center;
+    color:#DDA15E;
+    margin:00.5em;}
+
+ p2 {text-shadow:1px 1px 3px #DDA15E;
+    text-align: center;
+    color:#DDA15E;
+    font-size:25px;
+    line-height: .1;
+    }
+
+    section{
+
+    opacity:0 ;
+    transition: opacity 1.5s;
+
+    }
+
+    section.visible{opacity:1;}
+
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    }
+    .item1 {
+    grid-column: 2; /* place in 2nd column */
+    grid-row: 1; /* place in 1st row */
+    }
+    .item2{
+    grid-column:0;
+    grid-row:1;
+    text-align:left;
+    bottom:0;
+    left:0;
+    position:absolute;
+    }
+    .item3{
+     text-align:center;
+     left:200;
+     top:100;
+     position:absolute;
+     }
+
+
+  </style>
+  </head>
+  <body>
+  <section class="visible">
+  <div class = container>
+  <h1 class= item3;>Code. Create. Repeat.</h1>
+  </div>
+  <P><b>Fresh in cybersecurity|HTML</b></P>
+  <p>
+  <b style="font-size:40px;">  Broken code   </b>
+  <i style="font-size:30px;">  is the Way of </i>
+  <b style="font-size:40px;">  Life          </b>
+  <i style="font-size:30px;">  nowdays       </i></p2>
+</section>
+<section>
+  <h2 style =
+      'font-size:100px;
+       text-shadow:2px 2px 5px #DDA15E;'> MY Journey </h2>
+ <p style ="
+           text-align:center;
+           font-family:verdana;">
+           <b style=font-size:50px;>How</b>
+           <i style= "font-size:55px;">I</i>
+           <b style=font-size:50px;>started </b></p>
+<div class = container>
+ <p class = item1 style = text-align:;font-size:20px;><p>
+ <p class = item1 style = text-align:;font-size:20px; ></p>
+ <p class = item1></p>
+</div>
+<div class = container>
+<p class = item2>
+I started coding back in 2014 but kearen a bit C# but left it but now in 2026 I returned
+in programing with a diffrent language.
+</div>
+</section>
+<script>
+ window.addEventListener('scroll', () => {
+   document.querySelectorAll('section').forEach(sec => {
+      let rect = sec.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0)
+        {sec.classList.add('visible');}
+        else{
+        sec.classList.remove('visible');
+        }
+      });
+    });
+    document.querySelector('section').classList.add('visible');
+
+</script>
+</body>
+</html>
+
